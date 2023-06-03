@@ -1,0 +1,27 @@
+name: "gollucci.com"
+records:
+  - name: "gollucci.com."
+    type: TXT
+    values:
+      - '"google-site-verification=Tl0msbXEFgZ1Gq3MdEVmw_L1WG7JJc_CYz_sv049xeI"'
+      - '"v=spf1 include:_spf.google.com ~all"'
+  - name: "google._domainkey.gollucci.com."
+    type: TXT
+    values:
+      - '"v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCEnHKX4IYpKneBKcpYaHIzmviGC1OvxWD+GgeiqgCpmcliN6SUEA2uYAGIcRNJLSsn1CRKTvpkyCPBoGfZ+10h1t//b8hKuGSPnitjF9iU5MqB5R/BcEd4N9xeAu1vU9sZGyN8q8I2WZpabsb8WzdhKPjNw8pBBDoVjtADNSDavQIDAQAB"'
+  - name: "gollucci.com."
+    type: MX
+    values:
+      - "1 ASPMX.L.GOOGLE.COM"
+      - "5 ALT1.ASPMX.L.GOOGLE.COM."
+      - "5 ALT2.ASPMX.L.GOOGLE.COM."
+      - "10 ALT3.ASPMX.L.GOOGLE.COM."
+      - "10 ALT4.ASPMX.L.GOOGLE.COM."
+  - name: "www.gollucci.com."
+    type: DS
+    values:
+      - "15766 13 2 E78C623721989C737B7549091AC541BF091E803883FDEB4F7E36742840E94463"
+  - name: "mail.gollucci.com."
+    type: CNAME
+    values:
+      - "ghs.googlehosted.com"

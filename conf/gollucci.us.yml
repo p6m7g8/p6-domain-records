@@ -1,0 +1,20 @@
+name: "gollucci.us"
+records:
+  - name: "gollucci.us"
+    type: TXT
+    values:
+      - "v=spf1 include:_spf.google.com ~all"
+      - "google-site-verification=zx-ila5RY92n7KgFwI-I3VFsKTLnZfedbvR-fGEAjUQ"
+  - name: "gollucci.us"
+    type: MX
+    values:
+      - "1 ASPMX.L.GOOGLE.COM"
+      - "5 ALT1.ASPMX.L.GOOGLE.COM."
+      - "5 ALT2.ASPMX.L.GOOGLE.COM."
+      - "10 ALT3.ASPMX.L.GOOGLE.COM."
+      - "10 ALT4.ASPMX.L.GOOGLE.COM."
+  - name: "mail.gollucci.us"
+    type: CNAME
+    values:
+      - "ghs.googlehosted.com"
+

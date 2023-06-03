@@ -1,0 +1,23 @@
+name: "p6m7g8.net"
+records:
+  - name: "p6m7g8.net"
+    type: TXT
+    values:
+      - "v=spf1 include:_spf.google.com ~all"
+  - name: "google._domainkey.p6m7g8.net"
+    type: TXT
+    values:
+      - "v=DKIM1; k=rsa; p="
+  - name: "p6m7g8.net"
+    type: MX
+    values:
+      - "1 ASPMX.L.GOOGLE.COM"
+      - "5 ALT1.ASPMX.L.GOOGLE.COM."
+      - "5 ALT2.ASPMX.L.GOOGLE.COM."
+      - "10 ALT3.ASPMX.L.GOOGLE.COM."
+      - "10 ALT4.ASPMX.L.GOOGLE.COM."
+  - name: "mail.p6m7g8.net"
+    type: CNAME
+    values:
+      - "ghs.googlehosted.com"
+

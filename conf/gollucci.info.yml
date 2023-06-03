@@ -1,0 +1,24 @@
+name: "gollucci.info"
+records:
+  - name: "gollucci.info"
+    type: TXT
+    values:
+      - "v=spf1 include:_spf.google.com ~all"
+      - "google-site-verification=JVDJQv--usTq12R8YKfYKejnndCqnr3ir7MNsNR7-pw"
+  - name: "google._domainkey.gollucci.info"
+    type: TXT
+    values:
+      - "v=DKIM1; k=rsa; p="
+  - name: "gollucci.info"
+    type: MX
+    values:
+      - "1 ASPMX.L.GOOGLE.COM"
+      - "5 ALT1.ASPMX.L.GOOGLE.COM."
+      - "5 ALT2.ASPMX.L.GOOGLE.COM."
+      - "10 ALT3.ASPMX.L.GOOGLE.COM."
+      - "10 ALT4.ASPMX.L.GOOGLE.COM."
+  - name: "mail.gollucci.info"
+    type: CNAME
+    values:
+      - "ghs.googlehosted.com"
+

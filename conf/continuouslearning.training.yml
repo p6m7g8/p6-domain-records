@@ -1,0 +1,38 @@
+name: "continuouslearning.training"
+records:
+  - name: "continuouslearning.training"
+    type: MX
+    values:
+      - "1 ASPMX.L.GOOGLE.COM."
+      - "5 ALT1.ASPMX.L.GOOGLE.COM."
+      - "5 ALT2.ASPMX.L.GOOGLE.COM."
+      - "10 ALT3.ASPMX.L.GOOGLE.COM."
+      - "10 ALT4.ASPMX.L.GOOGLE.COM."
+  - name: "ns1"
+    type: NS
+    values:
+      - "ns-459.awsdns-57.com."
+  - name: "ns2"
+    type: NS
+    values:
+      - "ns-922.awsdns-51.net."
+  - name: "ns3"
+    type: NS
+    values:
+      - "ns-1988.awsdns-56.co.uk."
+  - name: "ns4"
+    type: NS
+    values:
+      - "ns-1160.awsdns-17.org."
+  - name: "google-site-verification"
+    type: TXT
+    values:
+      - "n7vpPB4jdN3IVzPyQWOOcMM_qaMhhnowstt8v2LJU78"
+  - name: "continuouslearning.training"
+    type: TXT
+    values:
+      - "v=spf1 include:_spf.google.com ~all"
+  - name: "mail"
+    type: CNAME
+    values:
+      - "ghs.googlehosted.com."
