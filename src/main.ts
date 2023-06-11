@@ -1,8 +1,8 @@
+import * as fs from "fs";
 import * as cdk from "aws-cdk-lib";
 import * as route53 from "aws-cdk-lib/aws-route53";
 import { MxRecordValue } from "aws-cdk-lib/aws-route53";
 import { Construct } from "constructs";
-import * as fs from "fs";
 import * as yaml from "js-yaml";
 
 const CONF_DIR = "conf";
@@ -53,11 +53,15 @@ export class MyStack extends cdk.Stack {
   }
 
   private createARecord(zone: route53.IPublicHostedZone, record: Record) {
-    new route53.ARecord(this, `Record-${record.type}-${record.type}-${record.name}`, {
-      zone,
-      recordName: record.name,
-      target: route53.RecordTarget.fromIpAddresses(record.values[0]),
-    });
+    new route53.ARecord(
+      this,
+      `Record-${record.type}-${record.type}-${record.name}`,
+      {
+        zone,
+        recordName: record.name,
+        target: route53.RecordTarget.fromIpAddresses(record.values[0]),
+      }
+    );
   }
 
   private createAaaaRecord(zone: route53.IPublicHostedZone, record: Record) {
