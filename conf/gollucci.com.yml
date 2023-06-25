@@ -9,6 +9,10 @@ records:
     type: TXT
     values:
       - "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCEnHKX4IYpKneBKcpYaHIzmviGC1OvxWD+GgeiqgCpmcliN6SUEA2uYAGIcRNJLSsn1CRKTvpkyCPBoGfZ+10h1t//b8hKuGSPnitjF9iU5MqB5R/BcEd4N9xeAu1vU9sZGyN8q8I2WZpabsb8WzdhKPjNw8pBBDoVjtADNSDavQIDAQAB"
+  - name: "_dmarc.gollucci.com."
+    type: TXT
+    values:
+      - "v=DMARC1; p=none; rua=mailto:postmaster@gollucci.com"
   - name: "gollucci.com."
     type: MX
     values:
@@ -25,3 +29,7 @@ records:
     type: CNAME
     values:
       - "ghs.googlehosted.com"
+  - name: "_github-pages-challenge-pgollucci.gollucci.com."
+    type: TXT
+    values:
+      - "65a922b4b7c7a0caa7a2d91dc517fd"
