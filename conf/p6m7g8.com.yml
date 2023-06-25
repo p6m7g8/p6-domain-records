@@ -1,0 +1,30 @@
+name: "p6m7g8.com"
+records:
+  - name: "p6m7g8.com"
+    type: TXT
+    values:
+      - "v=spf1 include:_spf.google.com ~all"
+  - name: "google._domainkey.p6m7g8.com"
+    type: TXT
+    values:
+      - "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCjtho0MHdm5tnm7SeMkGANNcLXBljSbTCMwwx7LW6z+rYNdWG10z9f97AycD9o0OJsFHuLXTGmuPYH/SB1SRSASW2gTMTHvesskWyaqlLZMI0CQcJr3Dc6dHZO/bwz65FIP+MEXElEZSgFxXx9ceptpIUM2K+0Uyg+km0cHHbdUQIDAQAB"
+  - name: "_dmarc.p6m7g8.com."
+    type: TXT
+    values:
+      - "v=DMARC1; p=none; rua=mailto:postmaster@p6m7g8.com"
+  # - name: "p6m7g8.com"
+  #   type: MX
+  #   values:
+  #     - "1 ASPMX.L.GOOGLE.COM"
+  #     - "5 ALT1.ASPMX.L.GOOGLE.COM."
+  #     - "5 ALT2.ASPMX.L.GOOGLE.COM."
+  #     - "10 ALT3.ASPMX.L.GOOGLE.COM."
+  #     - "10 ALT4.ASPMX.L.GOOGLE.COM."
+  - name: "mail.p6m7g8.com"
+    type: CNAME
+    values:
+      - "ghs.googlehosted.com"
+  - name: "_github-pages-challenge-p6m7g8"
+    type: TXT
+    values:
+      - "633bf8038dba1689cf5fbf7d07cd59"
