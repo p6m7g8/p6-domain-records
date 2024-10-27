@@ -2,7 +2,7 @@ import antfu from '@antfu/eslint-config'
 
 export default antfu({
   ignores: [
-    '.github/pull_request_template.md',
+    '.github/',
     '.mergify.yml',
     '.vscode/',
     'cdk.json',
