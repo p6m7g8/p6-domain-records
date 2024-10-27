@@ -1,7 +1,9 @@
 name: Deploy
 
 on:
-  pull_request: {}
+  push:
+    branches:
+      - main
   workflow_dispatch: {}
 
 jobs:
@@ -50,4 +52,4 @@ jobs:
           CDK_DEFAULT_ACCOUNT: ${{ secrets.CDK_DEFAULT_ACCOUNT }}
           CDK_DEFAULT_REGION: ${{ secrets.CDK_DEFAULT_REGION }}
           AWS_REGION: ${{ secrets.CDK_DEPLOY_REGION }}
-        run: pnpm run deploy
+        run: pnpm run deploy --all
