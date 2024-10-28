@@ -331,8 +331,8 @@ packages:
     resolution: {integrity: sha512-CCZCDJuduB9OUkFkY2IgppNZMi2lBQgD2qzwXkEia16cge2pijY/aXi96CJMquDMn3nJdlPV1A5KrJEXwfLNzQ==}
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
 
-  '@eslint/compat@1.2.1':
-    resolution: {integrity: sha512-JbHG2TWuCeNzh87fXo+/46Z1LEo9DBA9T188d0fZgGxAD+cNyS6sx9fdiyxjGPBMyQVRlCutTByZ6a5+YMkF7g==}
+  '@eslint/compat@1.2.2':
+    resolution: {integrity: sha512-jhgiIrsw+tRfcBQ4BFl2C3vCrIUw2trCY0cnDvGZpwTtKCEDmZhAtMfrEUP/KpnwM6PrO0T+Ltm+ccW74olG3Q==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^9.10.0
@@ -364,8 +364,8 @@ packages:
     resolution: {integrity: sha512-BsWiH1yFGjXXS2yvrf5LyuoSIIbPrGUWob917o+BTKuZ7qJdxX8aJLRxs1fS9n6r7vESrq1OUqb68dANcFXuQQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@eslint/plugin-kit@0.2.1':
-    resolution: {integrity: sha512-HFZ4Mp26nbWk9d/BpvP0YNL6W4UoZF0VFcTw/aPPA8RpOxeFQgK+ClABGgAUXs9Y/RGX/l1vOmrqz1MQt9MNuw==}
+  '@eslint/plugin-kit@0.2.2':
+    resolution: {integrity: sha512-CXtq5nR4Su+2I47WPOlWud98Y5Lv8Kyxp2ukhgFx/eW6Blm18VXJO5WuQylPugRo8nbluoi6GvvxBLqHcvqUUw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@humanfs/core@0.19.1':
@@ -3002,7 +3002,7 @@ snapshots:
 
   '@eslint-community/regexpp@4.12.1': {}
 
-  '@eslint/compat@1.2.1(eslint@9.13.0)':
+  '@eslint/compat@1.2.2(eslint@9.13.0)':
     optionalDependencies:
       eslint: 9.13.0
 
@@ -3034,7 +3034,7 @@ snapshots:
 
   '@eslint/markdown@6.2.1':
     dependencies:
-      '@eslint/plugin-kit': 0.2.1
+      '@eslint/plugin-kit': 0.2.2
       mdast-util-from-markdown: 2.0.2
       mdast-util-gfm: 3.0.0
       micromark-extension-gfm: 3.0.0
@@ -3043,7 +3043,7 @@ snapshots:
 
   '@eslint/object-schema@2.1.4': {}
 
-  '@eslint/plugin-kit@0.2.1':
+  '@eslint/plugin-kit@0.2.2':
     dependencies:
       levn: 0.4.1
 
@@ -3968,7 +3968,7 @@ snapshots:
 
   eslint-config-flat-gitignore@0.3.0(eslint@9.13.0):
     dependencies:
-      '@eslint/compat': 1.2.1(eslint@9.13.0)
+      '@eslint/compat': 1.2.2(eslint@9.13.0)
       eslint: 9.13.0
       find-up-simple: 1.0.0
 
@@ -4215,7 +4215,7 @@ snapshots:
       '@eslint/core': 0.7.0
       '@eslint/eslintrc': 3.1.0
       '@eslint/js': 9.13.0
-      '@eslint/plugin-kit': 0.2.1
+      '@eslint/plugin-kit': 0.2.2
       '@humanfs/node': 0.16.6
       '@humanwhocodes/module-importer': 1.0.1
       '@humanwhocodes/retry': 0.3.1
