@@ -19,7 +19,6 @@ jobs:
         run: |
           curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
           sudo apt-get install -y nodejs
-
       - name: Install pnpm and dependencies
         run: |
           corepack enable
@@ -32,19 +31,12 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      # - name: Assume role using OIDC
-      #   uses: aws-actions/configure-aws-credentials@v4.0.2
-      #   env:
-      #     AWS_REGION: ${{ secrets.CDK_DEPLOY_REGION }}
-      #   with:
-      #     role-to-assume: arn:aws:iam::346733622331:role/cdk-hnb659fds-lookup-role-346733622331-us-east-1
-      #     aws-region: $AWS_REGION
-      - name: Assume role using AWS credentials
+      - name: Assume role using OIDC
         uses: aws-actions/configure-aws-credentials@v4.0.2
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.CDK_DEPLOY_REGION }}
+          role-to-assume: ${{ secrets.AWS_ROLE }}
+          role-session-name: ${{ secrets.AWS_SESSION_NAME }}
       - name: Run deploy
         env:
           CDK_DEPLOY_ACCOUNT: ${{ secrets.CDK_DEPLOY_ACCOUNT }}
