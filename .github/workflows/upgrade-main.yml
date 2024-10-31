@@ -18,23 +18,32 @@ jobs:
         run: |
           curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
           sudo apt-get install -y nodejs
-
+      - name: Restore NPM node_modules
+        uses: actions/cache/restore@v4.1.2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node_modules-${{ hashFiles('yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-node_modules-
       - name: Install pnpm and dependencies
         run: |
           corepack enable
           corepack prepare pnpm@latest --activate
           pnpm install
+      - name: Update Deps
+        run: |
+          pnpm up --latest
+          git diff > diff.txt
+          echo "diff<<EOF" >> $GITHUB_ENV
+          cat diff.txt >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
       - name: Cache NPM dependencies
         uses: actions/cache@v4.1.2
         with:
           path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('pnpm-lock.yaml') }}
+          key: ${{ runner.os }}-node_modules-${{ hashFiles('pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-node-
-      - name: Update Deps
-        run: |
-          pnpm up --latest
-          git diff
+            ${{ runner.os }}-node_modules-
       - name: Create Pull Request
         id: create-pr
         uses: peter-evans/create-pull-request@v7.0.5
@@ -42,17 +51,14 @@ jobs:
           token: ${{ secrets.P6_PGOLLUCCI_GH_TOKEN }}
           commit-message: |-
             chore(deps): upgrade dependencies
-
-            Upgrades project dependencies. See details in [workflow run].
-
-            [Workflow Run]: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           branch: github-actions/upgrade-main
           title: "chore(deps): upgrade dependencies"
-          labels: auto-approve
-          body: |-
-            Upgrades project dependencies. See details in [workflow run].
-
-            [Workflow Run]: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          labels: auto-merge
+          body: |
+              Upgrades project dependencies. The following changes were made:
+              ```diff
+              ${{ env.diff }}
+              ```
           author: github-actions <github-actions@github.com>
           committer: github-actions <github-actions@github.com>
           signoff: true
