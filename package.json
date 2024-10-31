@@ -25,7 +25,7 @@
     "@antfu/eslint-config": "^3.8.0",
     "@types/jest": "^29.5.14",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "22.8.4",
+    "@types/node": "22.8.5",
     "@typescript-eslint/eslint-plugin": "^8.12.2",
     "@typescript-eslint/parser": "^8.12.2",
     "aws-cdk": "2.164.1",
