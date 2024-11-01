@@ -22,7 +22,7 @@ jobs:
         uses: actions/cache/restore@v4.1.2
         with:
           path: node_modules
-          key: ${{ runner.os }}-node_modules-${{ hashFiles('yarn.lock') }}
+          key: ${{ runner.os }}-node_modules-${{ hashFiles('pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-node_modules-
       - name: Install pnpm and dependencies
