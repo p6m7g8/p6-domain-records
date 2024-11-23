@@ -6,6 +6,7 @@ export default antfu({
     '.github/',
     '.mergify.yml',
     '.vscode/',
+    'README.md',
     'cdk.json',
     'conf/*.yml',
     'package.json',
@@ -14,6 +15,7 @@ export default antfu({
   plugins: {
   },
   languageOptions: {
+    ecmaVersion: 'latest',
   },
   rules: {
     'no-new': 'off',
