@@ -2,6 +2,7 @@ import antfu from '@antfu/eslint-config'
 
 export default antfu({
   ignores: [
+    '.deps/',
     '.github/',
     '.mergify.yml',
     '.vscode/',
