@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       aws-cdk-lib:
-        specifier: 2.231.0
-        version: 2.231.0(constructs@10.4.3)
+        specifier: 2.232.0
+        version: 2.232.0(constructs@10.4.3)
       constructs:
         specifier: ^10.4.3
         version: 10.4.3
@@ -22,8 +22,8 @@ importers:
         version: 0.5.21
     devDependencies:
       '@antfu/eslint-config':
-        specifier: ^6.4.1
-        version: 6.4.1(@vue/compiler-sfc@3.5.12)(eslint@9.39.1)(typescript@5.9.3)
+        specifier: ^6.4.2
+        version: 6.4.2(@vue/compiler-sfc@3.5.12)(eslint@9.39.1)(typescript@5.9.3)
       '@types/jest':
         specifier: ^30.0.0
         version: 30.0.0
@@ -63,8 +63,8 @@ importers:
 
 packages:
 
-  '@antfu/eslint-config@6.4.1':
-    resolution: {integrity: sha512-9Fj5AK2VJcmfCGF5yJ3TWbygCM8TcnP/oYgC0hqM62j8BTEd7XCI0IxU+STl0duotI4EjXdcGhHdrOjFoB58qw==}
+  '@antfu/eslint-config@6.4.2':
+    resolution: {integrity: sha512-kj6tZEKXMu07pCBH9TjPyRsQf8oZCwd3I6RFycKz8gPP5/uALictvUJsEA9bXBqZvtqA8SUEwLPLhVRZTSUTWQ==}
     hasBin: true
     peerDependencies:
       '@eslint-react/eslint-plugin': ^2.0.1
@@ -903,8 +903,8 @@ packages:
     resolution: {integrity: sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==}
     engines: {node: '>= 0.4'}
 
-  aws-cdk-lib@2.231.0:
-    resolution: {integrity: sha512-RMt88F1vhsM28j81EjvIXRoPeYQdtk72EGh9xAP6LjuyF8df1hDBIy5cawUvagdp5eCBPVHrPJ2U0eaUUKtjFg==}
+  aws-cdk-lib@2.232.0:
+    resolution: {integrity: sha512-EMk3SRMNio/nnKC3QIn1GQlimdp2aXw0LUgwUwiWPg3r7ACPUy9PrsWdWu+3sAx16pT9Eswckf8fb1ykXSc5Mg==}
     engines: {node: '>= 18.0.0'}
     peerDependencies:
       constructs: ^10.0.0
@@ -954,8 +954,8 @@ packages:
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
 
-  baseline-browser-mapping@2.9.1:
-    resolution: {integrity: sha512-H00ots52fOzvVPIts3HCw+OTZR/OXrFo1hZS1W+lwbDmSt7SMYb1g3zsyNmLQjuwZ1H+T3Pua2EiJc4svJK1pg==}
+  baseline-browser-mapping@2.9.2:
+    resolution: {integrity: sha512-PxSsosKQjI38iXkmb3d0Y32efqyA0uW4s41u4IVBsLlWLhCiYNpH/AfNOVWRqCQBlD8TFJTz6OUWNd4DFJCnmw==}
     hasBin: true
 
   boolbase@1.0.0:
@@ -1186,8 +1186,8 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  electron-to-chromium@1.5.264:
-    resolution: {integrity: sha512-1tEf0nLgltC3iy9wtlYDlQDc5Rg9lEKVjEmIHJ21rI9OcqkvD45K1oyNIRA4rR1z3LgJ7KeGzEBojVcV6m4qjA==}
+  electron-to-chromium@1.5.266:
+    resolution: {integrity: sha512-kgWEglXvkEfMH7rxP5OSZZwnaDWT7J9EoZCujhnpLbfi0bbNtRkgdX2E3gt0Uer11c61qCYktB3hwkAS325sJg==}
 
   emittery@0.13.1:
     resolution: {integrity: sha512-DeWwawk6r5yR9jFgnDKYt4sLS0LmHJJi3ZOnb5/JdbYwj3nW+FxQnHIjhBKz8YLC7oRNPVM9NQ47I3CVx34eqQ==}
@@ -1386,8 +1386,8 @@ packages:
     peerDependencies:
       eslint: '>=8.45.0'
 
-  eslint-plugin-pnpm@1.4.0:
-    resolution: {integrity: sha512-kp2aO7wzncLPXdWYGv2VEVuEEiZWnVtdavVvO0whbLWHYe4NjKkcEiYBNLBq4/uTOSUFYCouzuhw5cMMAlWIkg==}
+  eslint-plugin-pnpm@1.4.1:
+    resolution: {integrity: sha512-BVb2/cDN8YmgW+lu0bDeCP7a8CzE8CiKfztd46Ide71qbqR5uKD9TaD1W9FSRf36Pa8noEVuH73CAQ6rdgSu0w==}
     peerDependencies:
       eslint: ^9.0.0
 
@@ -2477,8 +2477,8 @@ packages:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
     engines: {node: '>=4'}
 
-  pnpm-workspace-yaml@1.4.0:
-    resolution: {integrity: sha512-6e4NEk1s9GpuPXqWqbwL7vL2uAHAT06aPcYMk4wnCnD9VGNawPNYVy2Se678u4YpThwjKJjJE+00gsR6eHSpiA==}
+  pnpm-workspace-yaml@1.4.1:
+    resolution: {integrity: sha512-k3TFyIjKf4bJnZ/jnqTfdytcsZfoglnb26kTXP3E8pYYaPyvvqxTd7tL4aJ5Wotc8Oi/+YADYwdkOu3snFS+Hg==}
 
   possible-typed-array-names@1.1.0:
     resolution: {integrity: sha512-/+5VFTchJDoVj3bhoqi6UeymcD00DAwb1nJwamzPvHEszJ4FpF6SNNbUbOS8yI56qHzdV8eK0qEfOSiodkTdxg==}
@@ -3010,7 +3010,7 @@ packages:
 
 snapshots:
 
-  '@antfu/eslint-config@6.4.1(@vue/compiler-sfc@3.5.12)(eslint@9.39.1)(typescript@5.9.3)':
+  '@antfu/eslint-config@6.4.2(@vue/compiler-sfc@3.5.12)(eslint@9.39.1)(typescript@5.9.3)':
     dependencies:
       '@antfu/install-pkg': 1.1.0
       '@clack/prompts': 0.11.0
@@ -3034,7 +3034,7 @@ snapshots:
       eslint-plugin-n: 17.23.1(eslint@9.39.1)(typescript@5.9.3)
       eslint-plugin-no-only-tests: 3.3.0
       eslint-plugin-perfectionist: 4.15.1(eslint@9.39.1)(typescript@5.9.3)
-      eslint-plugin-pnpm: 1.4.0(eslint@9.39.1)
+      eslint-plugin-pnpm: 1.4.1(eslint@9.39.1)
       eslint-plugin-regexp: 2.10.0(eslint@9.39.1)
       eslint-plugin-toml: 0.12.0(eslint@9.39.1)
       eslint-plugin-unicorn: 62.0.0(eslint@9.39.1)
@@ -4028,7 +4028,7 @@ snapshots:
     dependencies:
       possible-typed-array-names: 1.1.0
 
-  aws-cdk-lib@2.231.0(constructs@10.4.3):
+  aws-cdk-lib@2.232.0(constructs@10.4.3):
     dependencies:
       '@aws-cdk/asset-awscli-v1': 2.2.242
       '@aws-cdk/asset-node-proxy-agent-v6': 2.1.0
@@ -4093,7 +4093,7 @@ snapshots:
 
   balanced-match@1.0.2: {}
 
-  baseline-browser-mapping@2.9.1: {}
+  baseline-browser-mapping@2.9.2: {}
 
   boolbase@1.0.0: {}
 
@@ -4112,9 +4112,9 @@ snapshots:
 
   browserslist@4.28.1:
     dependencies:
-      baseline-browser-mapping: 2.9.1
+      baseline-browser-mapping: 2.9.2
       caniuse-lite: 1.0.30001759
-      electron-to-chromium: 1.5.264
+      electron-to-chromium: 1.5.266
       node-releases: 2.0.27
       update-browserslist-db: 1.2.2(browserslist@4.28.1)
 
@@ -4292,7 +4292,7 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  electron-to-chromium@1.5.264: {}
+  electron-to-chromium@1.5.266: {}
 
   emittery@0.13.1: {}
 
@@ -4567,13 +4567,13 @@ snapshots:
       - supports-color
       - typescript
 
-  eslint-plugin-pnpm@1.4.0(eslint@9.39.1):
+  eslint-plugin-pnpm@1.4.1(eslint@9.39.1):
     dependencies:
       empathic: 2.0.0
       eslint: 9.39.1
       jsonc-eslint-parser: 2.4.1
       pathe: 2.0.3
-      pnpm-workspace-yaml: 1.4.0
+      pnpm-workspace-yaml: 1.4.1
       tinyglobby: 0.2.15
       yaml: 2.8.2
       yaml-eslint-parser: 1.3.2
@@ -6062,7 +6062,7 @@ snapshots:
 
   pluralize@8.0.0: {}
 
-  pnpm-workspace-yaml@1.4.0:
+  pnpm-workspace-yaml@1.4.1:
     dependencies:
       yaml: 2.8.2
 
