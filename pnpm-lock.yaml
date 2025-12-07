@@ -1358,8 +1358,8 @@ packages:
       '@typescript-eslint/parser':
         optional: true
 
-  eslint-plugin-jsdoc@61.4.1:
-    resolution: {integrity: sha512-3c1QW/bV25sJ1MsIvsvW+EtLtN6yZMduw7LVQNVt72y2/5BbV5Pg5b//TE5T48LRUxoEQGaZJejCmcj3wCxBzw==}
+  eslint-plugin-jsdoc@61.4.2:
+    resolution: {integrity: sha512-WzZNvefoUaG/JWikVFhNLYqE2BEd6LQD2ZyfJOe1Ld3Cir05csDMMf0AihGwrSbB/e7fHRSfQOZ4F/hik9fQww==}
     engines: {node: '>=20.11.0'}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
@@ -2081,8 +2081,8 @@ packages:
     engines: {node: '>=6'}
     hasBin: true
 
-  jsonc-eslint-parser@2.4.1:
-    resolution: {integrity: sha512-uuPNLJkKN8NXAlZlQ6kmUF9qO+T6Kyd7oV4+/7yy8Jz6+MZNyhPq8EdLpdfnPVzUC8qSf1b4j1azKaGnFsjmsw==}
+  jsonc-eslint-parser@2.4.2:
+    resolution: {integrity: sha512-1e4qoRgnn448pRuMvKGsFFymUCquZV0mpGgOyIKNgD3JVDTsVJyRBGH/Fm0tBb8WsWGgmB1mDe6/yJMQM37DUA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
   keyv@4.5.4:
@@ -2769,8 +2769,8 @@ packages:
     resolution: {integrity: sha512-41wJyvKep3yT2tyPqX/4blcfybknGB4D+oETKLs7Q76UiPqRpUJK3hr1nxelyYO0PHKVzJwlu0aCeEAsGI6rpw==}
     engines: {node: '>=20'}
 
-  toml-eslint-parser@0.10.0:
-    resolution: {integrity: sha512-khrZo4buq4qVmsGzS5yQjKe/WsFvV8fGfOjDQN0q4iy9FjRfPWRgTFrU8u1R2iu/SfWLhY9WnCi4Jhdrcbtg+g==}
+  toml-eslint-parser@0.10.1:
+    resolution: {integrity: sha512-9mjy3frhioGIVGcwamlVlUyJ9x+WHw/TXiz9R4YOlmsIuBN43r9Dp8HZ35SF9EKjHrn3BUZj04CF+YqZ2oJ+7w==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
   ts-api-utils@2.1.0:
@@ -3029,7 +3029,7 @@ snapshots:
       eslint-plugin-antfu: 3.1.1(eslint@9.39.1)
       eslint-plugin-command: 3.3.1(eslint@9.39.1)
       eslint-plugin-import-lite: 0.3.0(eslint@9.39.1)(typescript@5.9.3)
-      eslint-plugin-jsdoc: 61.4.1(eslint@9.39.1)
+      eslint-plugin-jsdoc: 61.4.2(eslint@9.39.1)
       eslint-plugin-jsonc: 2.21.0(eslint@9.39.1)
       eslint-plugin-n: 17.23.1(eslint@9.39.1)(typescript@5.9.3)
       eslint-plugin-no-only-tests: 3.3.0
@@ -3043,10 +3043,10 @@ snapshots:
       eslint-plugin-yml: 1.19.0(eslint@9.39.1)
       eslint-processor-vue-blocks: 2.0.0(@vue/compiler-sfc@3.5.12)(eslint@9.39.1)
       globals: 16.5.0
-      jsonc-eslint-parser: 2.4.1
+      jsonc-eslint-parser: 2.4.2
       local-pkg: 1.1.2
       parse-gitignore: 2.0.0
-      toml-eslint-parser: 0.10.0
+      toml-eslint-parser: 0.10.1
       vue-eslint-parser: 10.2.0(eslint@9.39.1)
       yaml-eslint-parser: 1.3.2
     transitivePeerDependencies:
@@ -4432,11 +4432,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-json-compat-utils@0.2.1(eslint@9.39.1)(jsonc-eslint-parser@2.4.1):
+  eslint-json-compat-utils@0.2.1(eslint@9.39.1)(jsonc-eslint-parser@2.4.2):
     dependencies:
       eslint: 9.39.1
       esquery: 1.6.0
-      jsonc-eslint-parser: 2.4.1
+      jsonc-eslint-parser: 2.4.2
 
   eslint-merge-processors@2.0.0(eslint@9.39.1):
     dependencies:
@@ -4505,7 +4505,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-jsdoc@61.4.1(eslint@9.39.1):
+  eslint-plugin-jsdoc@61.4.2(eslint@9.39.1):
     dependencies:
       '@es-joy/jsdoccomment': 0.76.0
       '@es-joy/resolve.exports': 1.2.0
@@ -4531,10 +4531,10 @@ snapshots:
       diff-sequences: 27.5.1
       eslint: 9.39.1
       eslint-compat-utils: 0.6.5(eslint@9.39.1)
-      eslint-json-compat-utils: 0.2.1(eslint@9.39.1)(jsonc-eslint-parser@2.4.1)
+      eslint-json-compat-utils: 0.2.1(eslint@9.39.1)(jsonc-eslint-parser@2.4.2)
       espree: 10.4.0
       graphemer: 1.4.0
-      jsonc-eslint-parser: 2.4.1
+      jsonc-eslint-parser: 2.4.2
       natural-compare: 1.4.0
       synckit: 0.11.11
     transitivePeerDependencies:
@@ -4571,7 +4571,7 @@ snapshots:
     dependencies:
       empathic: 2.0.0
       eslint: 9.39.1
-      jsonc-eslint-parser: 2.4.1
+      jsonc-eslint-parser: 2.4.2
       pathe: 2.0.3
       pnpm-workspace-yaml: 1.4.1
       tinyglobby: 0.2.15
@@ -4595,7 +4595,7 @@ snapshots:
       eslint: 9.39.1
       eslint-compat-utils: 0.6.5(eslint@9.39.1)
       lodash: 4.17.21
-      toml-eslint-parser: 0.10.0
+      toml-eslint-parser: 0.10.1
     transitivePeerDependencies:
       - supports-color
 
@@ -5491,7 +5491,7 @@ snapshots:
 
   json5@2.2.3: {}
 
-  jsonc-eslint-parser@2.4.1:
+  jsonc-eslint-parser@2.4.2:
     dependencies:
       acorn: 8.15.0
       eslint-visitor-keys: 3.4.3
@@ -6375,7 +6375,7 @@ snapshots:
       '@sindresorhus/base62': 1.0.0
       reserved-identifiers: 1.2.0
 
-  toml-eslint-parser@0.10.0:
+  toml-eslint-parser@0.10.1:
     dependencies:
       eslint-visitor-keys: 3.4.3
 
