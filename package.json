@@ -25,7 +25,7 @@
     "@antfu/eslint-config": "^9.5.1",
     "@types/jest": "^30.0.0",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "26.6.4",
+    "@types/node": "26.6.5",
     "@typescript-eslint/eslint-plugin": "^8.71.1",
     "@typescript-eslint/parser": "^8.71.1",
     "aws-cdk": "2.1145.0",
@@ -40,7 +40,7 @@
     "node": ">= 24.14.0"
   },
   "dependencies": {
-    "aws-cdk-lib": "2.272.0",
+    "aws-cdk-lib": "2.273.0",
     "constructs": "^10.8.1",
     "js-yaml": "^5.4.3",
     "source-map-support": "^0.5.21"
